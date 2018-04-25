@@ -5,6 +5,6 @@
 	<title>Sample Theme</title>
 	<?php wp_head(); ?>
 </head>
-<body>
-	<?php wp_nav_menu(); ?>
+<body <?php body_class(array()); ?>>
+	<?php wp_nav_menu(array('theme_location'=>'primary')); ?>
 

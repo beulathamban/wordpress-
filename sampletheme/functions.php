@@ -9,6 +9,8 @@ add_action('wp_enqueue_scripts', 'sampletheme_script_enqueue');
 
 function sampletheme_theme_setup() {
 add_theme_support('menus');
+register_nav_menu('primary','Primary Header Navigation');
+register_nav_menu('secondary','Footer Navigation');
 }
 add_action('init', 'sampletheme_theme_setup');//init or after_setup_theme
 ?>
